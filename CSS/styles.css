@@ -647,6 +647,11 @@ h4 {
     .suite {
         background-color: #333365;
     }
+
+    .passions-content {
+    max-width: 100%;
+    text-align: start; 
+}
 }
 
 
