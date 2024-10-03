@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sai</title>
+
+    <link rel="icon" type="png|image" href="/IMAGES/sailogo.png">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</head>
+<body>
+
+    
+    <div id="intro-screen" class="intro-screen">
+        <h1>Bienvenue !</h1>
+        <p>Pour continuer, entrez votre prénom :</p>
+        <form id="nameForm">
+            <input type="text" id="userName" placeholder="Entrez votre prénom" required>
+            <button type="submit">Entrer</button>
+        </form>
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo">{Portfolio}</a>
+    
+        <button class="hamburger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        
+        <nav class="navbar" id="main-nav">
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#passion" style="--i:2;">PASSIONS</a>
+            <a href="#avenir" style="--i:3;">AVENIR</a>
+        </nav>
+    
+        <!-- Menu mobile -->
+        <nav class="mobile-navbar" id="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#passion">PASSIONS</a>
+            <a href="#avenir">AVENIR</a>
+        </nav>
+    </header>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+<!-- SECTION HOME -->
+    <section id="home" class="home">
+
+        <div class="home-content" data-scroll data-scroll-speed="-5" >
+            <h1 id="userNameDisplay"></h1>
+            <h3>Je m'appelle Julian</h3>
+            
+            <p class="pres-text">
+                &emsp; &emsp;Ce portofolio parle de mes passions, de ce que je veux faire plus tard, d'informatique, et de mon quotidien. <br> <br>
+                &emsp; &emsp;Je me suis acheté mon premier ordinateur portable windows à 10 ans (avant chromebook) le jour où le confinement fut annoncé, je l'ai gardé pendant 5 ans et j'ai beaucoup avancé grâce à cet ordinateur, au niveau des échecs et de l'informatique.  
+            </p>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="/IMAGES/avatar.png" alt="Avatar">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- FIN SECTION HOME -->
+
+<!-- DEBUT SECTIONS PASSIONS -->
+    <section id="passion" class="passions">
+        <button id="actanim" class="actanim">Désactiver l'animation</button>
+        <canvas></canvas>
+        <div class="text-and-image">
+            <div class="passions-content">
+                <h1 class="informatique">INFORMATIQUE</h1>
+                <p class="p-text">
+                    Avant l'achat de ce <span class="highlight">pc windows</span>, je développais des <span class="highlight">bots discord</span> en python sur ma tablette. <br>
+                    Une fois ce pc acheté, pendant le confinement, j'avais eu l'idée de créer un site <span class="highlight">"réseau social"</span> pour ma classe. <br>
+                    Projet que j'ai finalement abandonné, presque au bout à cause de l'hébergement... Fin 6ème, je décide donc d'acheter un <span class="highlight">raspberry-pi</span> afin d'héberger mes bots discord, et un <span class="highlight">arduino</span> pour faire de l'électronique.<br>
+                    Ensuite j'ai plus ou moins arrêté l'informatique, et il y a un an, je m'étais lancé dans l'<span class="highlight">OSINT (OPEN SOURCE INTELLIGENCE)</span>. J'ai appris pas mal de choses. 
+                    J'ai ensuite continué, je me suis intéressé à tout ce qui était <span class="highlight">évasion anti-virus</span>, afin de rendre un malware <span class="highlight">FUD (Fully Undetectable)</span>. <br> 
+                    Je vois qu'en 3 mois, je commence réellement à prendre en expérience et à m'améliorer, puis j'ai fait un peu de <span class="highlight">hacking</span>, exploits. Actuellement, je fais du <span class="highlight">reverse engineering</span>, et <span class="highlight">malware analysis</span>, par exemple quand je trouve un stealer, j'aime bien extraire le webhook discord, ou l'adress ip distante et lui envoyer pleins d'informations au lieu d'informations volées, et en ce moment j'apprends le <span class="highlight">C/C++</span>.
+                </p>
+            </div>
+            <div class="image-column">
+                <img src="IMAGES/c_code.jpg" alt="C_lang" class="inline-image --img1">
+                <img src="IMAGES/raspberrypi.jpeg" alt="Raspberry Pi" class="inline-image --img2">
+                <a class="suite-btn" href="#suite">Suite</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEBUT SECTION SUITE-PASSIONS -->
+
+    <section id="suite" class="suite">
+        <div class="suite-content">
+            <h1 class="informatique">ECHECS</h1>
+            <p class="suite-p-text">
+                J'ai commencé les <span class="highlight">échecs</span> en <span class="highlight">CM1</span>, à l'âge de 8 ans. Je m'y suis tout de suite intéressé et, d'ailleurs, j'ai remporté l'open du <span class="highlight">Championnat de France</span> cette année-là. <br>
+                Depuis, j'ai atteint un niveau plutôt bon, j'ai été plusieurs fois <span class="highlight">Champion Départemental</span> (toutes catégories), et j'aspire à devenir <span class="highlight">Maître International</span> d'échecs dans les années à venir. <br>
+                Je voyage donc beaucoup pour mes tournois (<span class="highlight">Barcelone</span>, <span class="highlight">Bordeaux</span>, <span class="highlight">Paris</span>, etc...). <br>
+                Grâce aux échecs, je gagne de l'argent, un argent qui m'a permis de m'acheter mes ordinateurs. <br>
+                Mon ordinateur est un outil <span class="highlight">précieux</span> pour les échecs car, à mon niveau, chaque partie doit se préparer à l'avance, et chaque tournoi doit être planifié afin d'être en forme durant la <span class="highlight">compétition</span>. <br>
+                Les échecs sont uniquement une passion, je ne souhaiterais en aucun cas en faire une source de revenu fixe pour <span class="highlight">plus tard</span>, car je suis loin d'avoir le niveau pour bien vivre uniquement grâce aux échecs.
+            </p>
+        </div>
+    </section>
+
+    <!-- FIN SECTION SUITE-PASSIONS -->
+    
+<!-- FIN SECTIONS PASSIONS -->
+
+<section id="avenir" class="avenir">
+    <div class="avenir-content">
+        <h1 class="avenir-title">PARCOUR PROFESSIONEL</h1>
+        <p class="avenir-p-text">
+            Je souhaite devenir <span class="highlight">ingénieur en cybersécurité</span>, avec l'objectif de devenir vraiment expérimenté dans ce domaine. Pour cela, je prévois de passer des <span class="highlight">certifications reconnues</span> comme l'<span class="highlight">OSCP</span> et la <span class="highlight">CISSP</span>. Elles me permettront de développer mes compétences dans des domaines comme le <span class="highlight">hacking éthique</span>, la <span class="highlight">gestion des systèmes de sécurité</span>, et le <span class="highlight">reverse engineering</span>. <br><br>
+            Je ne sais pas encore exactement dans quel domaine de la cybersécurité je vais me spécialiser, mais ce qui est sûr, c'est que j'ai envie de toucher à tout. Tout m'intéresse, que ce soit <span class="highlight">protéger les systèmes</span>, <span class="highlight">exploiter les failles</span> ou <span class="highlight">analyser les malwares</span>. <br><br>
+            Ce que j'aime dans la cybersécurité, c'est l'<span class="highlight">évolution constante</span>. Anticiper, prévenir et réagir aux menaces demande une <span class="highlight">remise en question permanente</span> et c'est ce qui rend ce domaine intéressant, et complexe ! <br><br>
+            Même si je ne veux pas faire du <span class="highlight">développement</span> mon métier principal, je sais que c'est essentiel d'avoir des <span class="highlight">bases solides</span>. Ça me permettra d'être plus <span class="highlight">indépendant</span>, que ce soit pour <span class="highlight">exploiter des failles</span> ou comprendre comment fonctionnent certains "<span class="highlight">exploits</span>". <br><br>
+        </p>
+        <a class="credits-btn" href="#credits">Credits</a>
+    </div>
+    
+</section>
+<section id="credits" class="credits">
+    <div class="credits-content">
+        <h1>Crédits</h1>
+        <p>
+            1ere animation : <a href="https://codepen.io/hakimel/pen/bzrZGo" target="_blank">Codepen</a><br>
+            Template (SAI127001) : <a href="https://github.com/SAI127001/Ethical-Hacker-Portfolio-template" target="_blank">Template Github</a><br>
+            ChatGPT (aide javascript) : <a href="https://www.openai.com" target="_blank">OpenAI</a>
+        </p>
+    </div>
+</section>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Julian - Tous droits réservés.</p>
+    </footer>
+
+<script src="JAVASCRIPT/hamburger.js"></script>
+<script src="JAVASCRIPT/smooth.js"></script>
+<script src="JAVASCRIPT/progress-bar.js"></script>
+<script src="JAVASCRIPT/passion.js"></script>
+<script src="JAVASCRIPT/navbar-active.js"></script>
+<script src="JAVASCRIPT/scroll.js"></script>
+<script src="JAVASCRIPT/login.js"></script>
+
+
+</body>
+</html> 
