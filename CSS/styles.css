@@ -338,7 +338,7 @@ h4 {
     background-image: url("../IMAGES/chess-pieces-5120x2880-16636.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding: 50px 4% 0;
     padding-bottom: 20px;
