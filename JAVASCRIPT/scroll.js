@@ -1,3 +1,6 @@
+// Vérifier si l'appareil est mobile ou tablette
+const isMobileOrTablet = window.matchMedia("(max-width: 768px)").matches;
+
 // Récupérer toutes les sections
 const sections = document.querySelectorAll('section');
 let isScrolling = false; // État pour empêcher les défilements multiples
@@ -33,6 +36,11 @@ function smoothScroll(target, duration) {
 
 // Événement de défilement
 window.addEventListener('wheel', (event) => {
+    // Si c'est un appareil mobile ou tablette, ne pas faire de défilement animé
+    if (isMobileOrTablet) {
+        return; // Ignore le défilement
+    }
+
     if (isScrolling) return; // Empêche le défilement multiple
     isScrolling = true; // Définit l'état de défilement à vrai
 
